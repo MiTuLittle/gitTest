@@ -29,7 +29,7 @@ def test_1():
 
 
 def test_2():
-    picPath = "D:\\picSet\\cutPic\\src\\038EE1K070-3-2-1.jpg"
+    picPath = "D:\\picSet\\cutPic\\src\\black-2.jpg"
     if os.path.exists(picPath):
         im = cv2.imread(picPath)
         im2 = im.copy()
@@ -88,7 +88,7 @@ def test_2():
         img2_bg = cv2.bitwise_and(im2_PNG, im2_PNG, mask=mask_inv)
         plt.imshow(img2_bg)
         plt.show()
-        cv2.imwrite("D:\\picSet\\cutPic\\result\\KT\\038EE1K070-3-2-1-3.png", img2_bg)
+        cv2.imwrite("D:\\picSet\\cutPic\\result\\KT\\black-2-1.png", img2_bg)
     else:
         print("图片不存在")
 test_2()
